@@ -1,0 +1,9 @@
+.DS_Store
+*.env
+.env*
+!templates/env.example
+*.log
+node_modules/
+.claude/
+code/document.html
+code/document.pdf

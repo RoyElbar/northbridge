@@ -1,0 +1,20 @@
+<svg viewBox="0 0 880 400" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+  <rect width="880" height="400" fill="#0d1117"/>
+  <text x="440" y="66" text-anchor="middle" font-size="12" font-weight="600" letter-spacing="4" fill="#a1a1a6">MEMORY</text>
+  <text x="440" y="116" text-anchor="middle" font-size="38" font-weight="600" letter-spacing="-0.5" fill="#f5f5f7">Works like a cache.</text>
+  <text x="440" y="152" text-anchor="middle" font-size="17" fill="#a1a1a6">An agent never loads what the index already answers.</text>
+
+  <g font-size="15">
+    <rect x="290" y="192" width="300" height="44" rx="10" fill="#5f9bd6"/>
+    <text x="440" y="220" text-anchor="middle" font-weight="600" fill="#0d1117">L1 · hot index</text>
+    <text x="616" y="220" font-size="14" fill="#a1a1a6">always loaded</text>
+
+    <rect x="250" y="248" width="380" height="44" rx="10" fill="#5f9bd6" opacity="0.45"/>
+    <text x="440" y="276" text-anchor="middle" font-weight="600" fill="#f5f5f7">L2 · focused files</text>
+    <text x="656" y="276" font-size="14" fill="#a1a1a6">loaded on demand</text>
+
+    <rect x="210" y="304" width="460" height="44" rx="10" fill="#5f9bd6" opacity="0.16"/>
+    <text x="440" y="332" text-anchor="middle" font-weight="600" fill="#f5f5f7">L3 · deep archive</text>
+    <text x="696" y="332" font-size="14" fill="#a1a1a6">by pointer only</text>
+  </g>
+</svg>

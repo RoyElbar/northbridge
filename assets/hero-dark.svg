@@ -1,0 +1,55 @@
+<svg viewBox="0 0 880 620" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+  <rect width="880" height="620" fill="#0d1117"/>
+
+  <!-- label -->
+  <text x="440" y="86" text-anchor="middle" font-size="13" font-weight="600" letter-spacing="4" fill="#a1a1a6">NORTHBRIDGE</text>
+
+  <!-- headline -->
+  <text x="440" y="150" text-anchor="middle" font-size="52" font-weight="600" letter-spacing="-1" fill="#f5f5f7">Designed like a processor.</text>
+
+  <!-- sub -->
+  <text x="440" y="192" text-anchor="middle" font-size="20" fill="#a1a1a6">A personal AI system. 25+ agents, one shared memory,</text>
+  <text x="440" y="220" text-anchor="middle" font-size="20" fill="#a1a1a6">every result verified.</text>
+
+  <!-- ============ the die: three zones, nothing more ============ -->
+  <rect x="150" y="270" width="580" height="270" rx="18" fill="none" stroke="#2f3237" stroke-width="1.5"/>
+
+  <!-- agents -->
+  <g fill="#5f9bd6">
+    <circle cx="230" cy="340" r="7"/><circle cx="270" cy="340" r="7"/><circle cx="310" cy="340" r="7"/>
+    <circle cx="230" cy="380" r="7"/><circle cx="270" cy="380" r="7"/><circle cx="310" cy="380" r="7"/>
+    <circle cx="230" cy="420" r="7"/><circle cx="270" cy="420" r="7"/><circle cx="310" cy="420" r="7"/>
+    <circle cx="230" cy="460" r="7" opacity="0.35"/><circle cx="270" cy="460" r="7" opacity="0.35"/><circle cx="310" cy="460" r="7" opacity="0.35"/>
+  </g>
+  <text x="270" y="505" text-anchor="middle" font-size="14" font-weight="600" fill="#f5f5f7">Agents</text>
+
+  <!-- bus -->
+  <rect x="424" y="315" width="4" height="160" rx="2" fill="#f5f5f7"/>
+  <g stroke="#2f3237" stroke-width="1.5">
+    <line x1="332" y1="360" x2="422" y2="360"/>
+    <line x1="332" y1="440" x2="422" y2="440"/>
+    <line x1="430" y1="400" x2="524" y2="400"/>
+  </g>
+  <text x="426" y="505" text-anchor="middle" font-size="14" font-weight="600" fill="#f5f5f7">Bus</text>
+
+  <!-- memory -->
+  <g>
+    <rect x="530" y="330" width="150" height="34" rx="8" fill="#5f9bd6"/>
+    <rect x="530" y="376" width="150" height="34" rx="8" fill="#5f9bd6" opacity="0.45"/>
+    <rect x="530" y="422" width="150" height="34" rx="8" fill="#5f9bd6" opacity="0.18"/>
+  </g>
+  <text x="605" y="505" text-anchor="middle" font-size="14" font-weight="600" fill="#f5f5f7">Memory</text>
+
+  <!-- pulses -->
+  <circle r="4" fill="#5f9bd6" opacity="0">
+    <animateMotion dur="3s" repeatCount="indefinite" begin="0s" path="M 336 360 H 420"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.8;1" dur="3s" repeatCount="indefinite" begin="0s"/>
+  </circle>
+  <circle r="4" fill="#5f9bd6" opacity="0">
+    <animateMotion dur="3s" repeatCount="indefinite" begin="1.5s" path="M 434 400 H 522"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.8;1" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+  </circle>
+
+  <!-- footnote -->
+  <text x="440" y="585" text-anchor="middle" font-size="14" fill="#a1a1a6">Execution units · a shared bus · a cache-like memory hierarchy</text>
+</svg>

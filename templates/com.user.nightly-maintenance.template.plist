@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Template for the nightly self-maintenance job. Replace every __PLACEHOLDER__. -->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.__USER__.nightly-maintenance</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>__PYTHON_PATH__</string>
+        <string>__PATH_TO__/maintenance.py</string>
+        <string>--config</string>
+        <string>__PATH_TO__/maintenance-config.json</string>
+    </array>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>21</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>__PATH_TO__/logs/maintenance.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>__PATH_TO__/logs/maintenance.err.log</string>
+    <!-- The job runs the scan+classify pass; only the provably-safe fix class
+         is auto-applied. Everything else lands in the morning report. -->
+</dict>
+</plist>

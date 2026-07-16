@@ -1,0 +1,34 @@
+{
+  "header": {
+    "name": "NORTHBRIDGE",
+    "contact": ["single-page document engine", "sample content", "github.com/RoyElbar/northbridge"]
+  },
+  "summary": "This page was rendered by document_pipeline.py from content.sample.json. One content file in, a design-frozen PDF out — the same engine renders the CV this repo is linked from. If this document ever overflows one page, the build fails on purpose.",
+  "sections_order": ["how", "rules", "skills"],
+  "how": {
+    "heading": "How it works",
+    "headline": "content file → HTML → headless Chrome → one-page PDF",
+    "dates": "single pass",
+    "bullets": [
+      "The content file owns every word; the design is frozen in one CSS block.",
+      "A variant file deep-merges over the core — dicts merge deep, lists replace whole.",
+      "**bold** renders as emphasis, <m>muted</m> renders as metadata — the only markup allowed."
+    ]
+  },
+  "rules": {
+    "heading": "Design rules",
+    "bullets": [
+      "One page is a hard gate, not a guideline — overflow exits non-zero.",
+      "Content changes and design changes never travel in the same edit.",
+      "A stale PDF is never reported as fresh output."
+    ]
+  },
+  "skills": {
+    "heading": "Interface",
+    "lines": [
+      {"label": "--variant", "text": "deep-merge a variant file over the core content"},
+      {"label": "--check", "text": "render to a temp dir and report the page count only"},
+      {"label": "--append", "text": "merge an appendix PDF after the rendered page"}
+    ]
+  }
+}
